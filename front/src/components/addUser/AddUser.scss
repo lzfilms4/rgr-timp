@@ -1,0 +1,124 @@
+@use '../../scss/abstracts/' as *;
+@use 'sass:math';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+.maindiv {
+  .block {
+    width: 30%;
+    display: inline-block;
+    justify-content: space-between;
+    margin-left: 10px;
+    background: white;
+    border-radius: 35px;
+    font-style: normal;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #1B2559FF;
+    margin-bottom: 10px;
+
+
+    .question {
+      width: 100%;
+      text-align: center;
+
+      padding-bottom: 15px;
+      padding-top: 15px;
+    }
+
+    .answers {
+      .answers {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        padding-left: 10px;
+
+        background: #b4b9c7;
+        height: auto;
+        border-radius: 8px;
+
+
+      }
+
+      #nav{
+      height: 70px;
+    }
+      #nav ul{
+        list-style: none;
+      }
+      #nav > ul > li{
+        float: left;
+        width: 180px;
+        position: relative;
+      }
+      #nav li a{
+
+        display: block;
+        background: white;
+        border: 1px solid #b4b9c7;
+        border-radius: 35px;
+        padding: 8px;
+        text-align: center;
+      }
+      #nav li a:hover{
+        background: #2F718E;
+      }
+      #nav li .second{
+        display: none;
+        position: absolute;
+        top: 100%;
+      }
+      #nav li:hover .second{
+        display: block;
+      }
+    }
+  }
+  .accept {
+
+    border-radius: 18px;
+    background: none;
+    height: 35px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-right: 100px;
+    button:hover:active {
+      background: #b4b9c7;
+    }
+    button:hover:active {
+      background: #b4b9c7;
+    }
+    button{
+      cursor: pointer;
+      font-style: normal;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      color: #1B2559FF;
+      border: 1px solid #b4b9c7;
+      background: white;
+      border-radius: 35px;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+    }
+  }
+}
+.answers{
+  display: flex;
+  justify-content: space-around;
+}
+input, .submit{
+  border: 1px solid #b4b9c7;
+  border-radius: 18px;
+  width: 70%;
+  height: 35px;
+  padding-left: 20px;
+}
+.submit{
+
+  text-align: center;
+  padding-left: 0px;
+}

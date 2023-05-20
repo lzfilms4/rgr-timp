@@ -45,8 +45,16 @@ const Sidebar = () => {
                                 Топ-лист
                             </div>
                     </Link>
-                    <div className="sidebar__menu__line"></div>
                     
+                    <div className="sidebar__menu__line"></div>
+                    <Link to='addUser' className={`sidebar__menu__item`} onClick={closeSidebar}>
+                        <div className="sidebar__menu__item__icon">
+                            <i className='bx bx-add-to-queue'></i>
+                        </div>
+                        <div className="sidebar__menu__item__txt">
+                            Добавить
+                        </div>
+                    </Link>
                     <Link to ="addUser" className={`sidebar__menu__item add`}>
                         <div className="sidebar__menu__item__txt add__txt" onClick={closeSidebar}>
                         </div>

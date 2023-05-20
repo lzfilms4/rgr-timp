@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Dashboard from './pages/Dashboard'
 import MainLayout from './layout/MainLayout'
 import PersonsList from "./components/personsList/PersonsList";
+import AddUser from "./components/addUser/AddUser";
 import React from "react";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
                     <Route index element={<PersonsList />} />
                     <Route path="personsList" element={<PersonsList />} />
                     <Route path="/personsList/:id" element={<Dashboard />} />
+                    <Route path="addUser" element={<AddUser />} />
                 </Route>
 
             </Routes>
