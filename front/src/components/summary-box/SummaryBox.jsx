@@ -87,7 +87,7 @@ export const SummaryBoxSpecialHappiness = ({ happiness }) => {
                 <div className="summary-box__line">
                 </div>
                 <div className="summary-box-special__chart">
-                    Вероятность увольнения: Низкая
+                    Вероятность увольнения: {happiness <= 50 ? 'Высокая' : 'Низкая'}
                 </div>
                 <Progress className='summary-box__lineHappiness' percent={happiness} strokeColor={{ '0%': '#FF0000','50%': '#F2E823', '100%': '#1E9600' }} />
 
