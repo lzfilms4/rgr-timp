@@ -1,0 +1,31 @@
+.tests{
+    &__block{
+        display: flex;
+        justify-content: space-between;
+        background: #E9EDF7;
+        border-radius: 8px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 19px;
+        &_title{
+            color: #2B3674;
+        }
+        &_value{
+            background:#F9F9F9;
+            border-radius: 14px;
+            padding: 0 3px;
+        }
+    }
+}
+.title {
+    color: #fff !important;
+}
+.tests{
+    color:#2B3674 !important;
+}
+.small{
+    font-size: 12px;
+    font-weight: 300;
+}
