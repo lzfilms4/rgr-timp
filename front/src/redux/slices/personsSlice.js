@@ -4,6 +4,7 @@ export const fetchPersons = createAsyncThunk(
   // запрос
   'persons/fetchPersons',
   async (persons, thunkAPI) => {
+    //https://bright-wasp-long-johns.cyclic.app/person/findall
     const { data } = await axios.get('https://bright-wasp-long-johns.cyclic.app/person/findall');
     return data;
   },
