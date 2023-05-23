@@ -4,13 +4,21 @@ import { SummaryBoxSpecial, SummaryBoxSpecialHappiness } from '../components/sum
 import './Dashboard.scss'
 import { useParams, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux'
+import { fetchAuth, selectIsAuth, fetchRegister } from "../redux/slices/auth";
+import { Navigate } from "react-router-dom";
 
 const Dashboard = () => {
+    const isAuth = useSelector(selectIsAuth);
+
     const dispatch = useDispatch()
     const { id } = useParams();
     const navigate = useNavigate();
     const person = useSelector((state) => state.persons.persons).find(person => person._id === id)
     const persons = useSelector((state) => state.persons)
+
+    if (!isAuth) {
+        return <Navigate to="/Login" />;
+      }
     return (
         persons.persons.length?
         (

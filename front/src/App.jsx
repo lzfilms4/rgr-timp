@@ -6,11 +6,13 @@ import MainLayout from './layout/MainLayout'
 import PersonsList from "./components/personsList/PersonsList";
 import AddUser from "./components/addUser/AddUser";
 import React from "react";
+import { Login } from './components/Login/Login'
 
 function App() {
     return (
         <BrowserRouter>
             <Routes>
+                <Route path="Login" element={<Login />} />
                 <Route path="/" element={<MainLayout />}>
                     <Route index element={<PersonsList />} />
                     <Route path="personsList" element={<PersonsList />} />

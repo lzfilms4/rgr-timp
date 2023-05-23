@@ -61,8 +61,9 @@ const AddUser = () => {
 
   console.log(data);
   const sendTest = () => {
+    //'https://bright-wasp-long-johns.cyclic.app/person/create'
     axios
-      .post('https://bright-wasp-long-johns.cyclic.app/person/create', {
+      .post('http://localhost:5001/person/create', {
         fullName: data.fullName,
         age: data.Age,
         BusinessTravel: data.BusinessTravel,
