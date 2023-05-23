@@ -107,7 +107,7 @@ const AddUser = () => {
             <div className="questionTxt">Возраст</div>
           </div>
           <div className="answers">
-            <input type="text" onChange={(e) => setData({ ...data, Age: +e.target.value })}></input>
+            <input type="number" min="0" max="100" onChange={(e) => setData({ ...data, Age: +e.target.value })}></input>
           </div>
           <div className="question">
             <div className="questionTxt">Деловые поездки</div>
@@ -153,7 +153,7 @@ const AddUser = () => {
           </div>
           <div className="answers">
             <input
-              type="text"
+              type="number" min="0" max="100"
               onChange={(e) => setData({ ...data, DailyRate: +e.target.value })}></input>
           </div>
           <div className="question">
@@ -198,7 +198,7 @@ const AddUser = () => {
           </div>
           <div className="answers">
             <input
-              type="text"
+              type="number" min="0" max="100"
               onChange={(e) => setData({ ...data, Education: +e.target.value })}></input>
           </div>
           <div className="question">
@@ -206,7 +206,7 @@ const AddUser = () => {
           </div>
           <div className="answers">
             <input
-              type="text"
+              type="number" min="0" max="100"
               onChange={(e) =>
                 setData({ ...data, YearsSinceLastPromotion: +e.target.value })
               }></input>
@@ -244,7 +244,7 @@ const AddUser = () => {
           </div>
           <div className="answers">
             <input
-              type="text"
+              type="number" min="0" max="100"
               onChange={(e) => setData({ ...data, HourlyRate: +e.target.value })}></input>
           </div>
           <div className="question">
@@ -252,7 +252,7 @@ const AddUser = () => {
           </div>
           <div className="answers">
             <input
-              type="text"
+              type="number" min="0" max="100"
               onChange={(e) => setData({ ...data, JobInvolvement: +e.target.value })}></input>
           </div>
           <div className="question">
@@ -260,7 +260,7 @@ const AddUser = () => {
           </div>
           <div className="answers">
             <input
-              type="text"
+              type="number" min="0" max="100"
               onChange={(e) => setData({ ...data, JobLevel: +e.target.value })}></input>
           </div>
           <div className="question">
@@ -305,7 +305,7 @@ const AddUser = () => {
           </div>
           <div className="answers">
             <input
-              type="text"
+              type="number" min="0" max="100"
               onChange={(e) => setData({ ...data, MonthlyIncome: +e.target.value })}></input>
           </div>
           <div className="question">
@@ -313,7 +313,7 @@ const AddUser = () => {
           </div>
           <div className="answers">
             <input
-              type="text"
+              type="number" min="0" max="100"
               onChange={(e) => setData({ ...data, NumCompaniesWorked: +e.target.value })}></input>
           </div>
         </div>
@@ -349,7 +349,7 @@ const AddUser = () => {
           </div>
           <div className="answers">
             <input
-              type="text"
+              type="number" min="0" max="100"
               onChange={(e) => setData({ ...data, StandardHours: +e.target.value })}></input>
           </div>
           <div className="question">
@@ -357,18 +357,18 @@ const AddUser = () => {
           </div>
           <div className="answers">
             <input
-              type="text"
+              type="number" min="0" max="100"
               onChange={(e) => setData({ ...data, TotalWorkingYears: +e.target.value })}></input>
           </div>
           <div className="question">
-            <div className="questionTxt">Сфера образования</div>
+            <div className="questionTxt"> </div>
           </div>
           <div className="question">
             <div className="questionTxt">Лет в компании</div>
           </div>
           <div className="answers">
             <input
-              type="text"
+              type="number" min="0" max="100"
               onChange={(e) => setData({ ...data, YearsAtCompany: +e.target.value })}></input>
           </div>
           <div className="question">
@@ -376,7 +376,7 @@ const AddUser = () => {
           </div>
           <div className="answers">
             <input
-              type="text"
+              type="number" min="0" max="100"
               onChange={(e) => setData({ ...data, YearsInCurrentRole: +e.target.value })}></input>
           </div>
 
@@ -385,7 +385,7 @@ const AddUser = () => {
           </div>
           <div className="answers">
             <input
-              type="text"
+              type="number" min="0" max="100"
               onChange={(e) => setData({ ...data, YearsWithCurrManager: +e.target.value })}></input>
           </div>
           <div className="answers">
